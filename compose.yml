@@ -1,0 +1,8 @@
+services:
+  mock:
+    read_only: true
+    cap_drop:
+      - ALL
+    build: .
+    ports:
+      - 127.0.0.1:1323:1323
